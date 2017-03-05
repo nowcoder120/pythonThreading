@@ -1,5 +1,9 @@
-This project will hopefully teach me the basics of python classes, objects, and threading.
+This project will hopefully teach me the basics of python classes, objects, 
+and threading.
 
 The fuctionality of this project is to read in any number of separate files, then
 spin off the that same number of threads and have them safely write out to the 
 same file one line at a time.
+
+If any exceptions are caught while trying to write to the file, the thread 
+releases the lock and exits.
